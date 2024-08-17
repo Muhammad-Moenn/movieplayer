@@ -1,0 +1,129 @@
+.login{
+    background:linear-gradient(#0505057e);
+    backdrop-filter: blur(10px);
+    /* height:0%; */
+    pad: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 80px;
+
+}
+.l-img-box{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -10px;
+}
+.l-img-box img{
+    width: 40px;
+}
+.l-img-box span{
+    color: white;
+    font-size: 15px;
+    font-weight: 550;
+}
+.login-form{
+    max-width: 400px;
+    padding: 30px 40px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-top: 50px;
+    
+
+}
+.login-form h1{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.login-form input{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px auto;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+}
+.login-form input::placeholder{
+    color: rgb(211, 208, 205);
+    font-size: 16px;
+}
+.login-form button{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    font-size: 16px;
+    font-family: 600;
+    color: white;
+    background-color: #e50914;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.from-help{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.remember input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.from-help p:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.form-change{
+    margin-top: 10px;
+    color: #737373;
+    font-weight: 350;
+}
+.form-change span{
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    margin-left: 6px;
+}
+.form-change span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width:460px) {
+    .login-form{
+        padding: 20px 40px;
+        margin: auto;
+        margin-top: 10px;
+    
+    }
+    .login{
+        margin-bottom: 30px;
+    }
+}

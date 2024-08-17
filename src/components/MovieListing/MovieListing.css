@@ -1,0 +1,47 @@
+.movie-wapper{
+    z-index: -1;
+}
+
+.movie-list{
+    margin: 0px 40px;
+    
+}
+.movie-list h2{
+    color: skyblue;
+    margin: 10px;
+    /* text-align: center; */
+    font-weight: 400;
+}
+.movie-container{
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    height: auto;
+    
+}
+.swiper-box{
+    margin: auto;
+    text-align: center;
+    flex-shrink: 1;
+   
+}
+.swiperslide{
+    margin: 10px;
+    margin: auto;
+    
+}
+.swiper-slide{
+    flex-shrink: 1;
+}
+.back{
+    margin-left: -26px;
+}
+
+@media (max-width:550px) {
+    .movie-list h2{
+        color: skyblue;
+        margin: 10px;
+        text-align: center;
+        font-weight: 450;
+    }
+}

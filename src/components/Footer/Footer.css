@@ -1,0 +1,30 @@
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: #1a242f;
+    padding: 10px;
+    /* position:absolute;
+    bottom: 0px; */
+    /* left: 0px; */
+    width: 100%;
+    margin-top: 20px;
+}
+.footer span{
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+
+}
+.footer p{
+    text-align: center;
+}
+@media (max-width:410px) {
+    .footer p{
+        font-size: 14px;
+    }
+}

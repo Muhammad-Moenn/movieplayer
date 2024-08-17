@@ -1,0 +1,145 @@
+
+.header{
+    width: 100%;
+    height: 73px;
+    background-color: #1a242f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 34px;
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    overflow: hidden;
+}
+.h-left{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+}
+.h-left-box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+}
+.h-img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.h-img-box span{
+    font-size: 27px;
+    font-weight: 600;
+}
+.h-left img{
+    cursor: pointer;
+    width: 80px;
+    height:65px;
+    padding: 2px 10px;
+    object-fit: contain;
+    padding-top: 3px;  
+}
+.h-left p{
+    cursor: pointer;
+    color: white;
+}
+.h-left p:hover{
+    color: #80c2ff;
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: .5s;
+}
+.h-right{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 25px;
+}
+.h-right .user-icon{
+    font-size: 36px;
+    background-color: rgb(10, 101, 138);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-box{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap: 5px;
+    margin-right: -10px;
+}
+.visi{
+    display: block !important;
+}
+.search-box input{
+    padding: 4px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid rgb(31, 168, 223);
+    width: 300px;
+    outline: none;
+    display: none;
+    /* position: absolute; */
+}
+
+.search-box button{
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border:none;
+    outline:none ;
+    cursor: pointer;
+    background-color: rgb(16, 145, 16);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.search-box button:hover{
+    cursor: pointer;
+    background-color: rgb(2, 182, 2);
+     transform: scale(1.04);
+     transition: .5S;
+}
+.hide{
+    display: none;
+}
+
+@media (max-width:520px) {
+    .header{
+        padding: 10px 10px;
+    }
+    
+    .h-img-box span{
+      font-size: 20px;
+    }
+    .h-left img{
+        width: 70px;
+        height:60px;
+        padding: 2px 5px;
+        padding-top: 3px;  
+    }
+    .search-box input{
+        padding: 4px 10px;
+        font-size: 16px;
+        width: 230px;
+    }
+}
+@media (max-width:400px){
+    .h-img-box span{
+        font-size: 16px;
+      }
+}
+@media (max-width:360px){
+    .h-img-box span{
+        font-size: 12px;
+        font-weight: 700;
+      }
+}
