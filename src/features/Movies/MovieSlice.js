@@ -2,17 +2,17 @@ import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 
 
 export const fetchmovies=createAsyncThunk('fetchmovie',async(input)=>{
-    const response=await fetch(`http://www.omdbapi.com/?apikey=75c2f7cf&s=${input}&type=movie`)
+    const response=await fetch(`https://www.omdbapi.com/?apikey=75c2f7cf&s=${input}&type=movie`)
     const data=await response.json()
     return data;
 })
 export const fetchshows=createAsyncThunk('fetchshows',async(input)=>{
-    const response=await fetch(`http://www.omdbapi.com/?apikey=75c2f7cf&s=${input}&type=series`)
+    const response=await fetch(`https://www.omdbapi.com/?apikey=75c2f7cf&s=${input}&type=series`)
     const data=await response.json()
     return data;
 })
 export const fetchdetails=createAsyncThunk('fetchdetails',async(id)=>{
-    const response=await fetch(`http://www.omdbapi.com/?apikey=75c2f7cf&i=${id}&Plot=full`)
+    const response=await fetch(`https://www.omdbapi.com/?apikey=75c2f7cf&i=${id}&Plot=full`)
     const data=await response.json()
     return data;
 })

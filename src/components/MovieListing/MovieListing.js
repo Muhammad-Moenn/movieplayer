@@ -39,17 +39,7 @@ function MovieListing() {
   ) : (
     <div className='movie-error'><h3>{shows.Error}</h3></div>
   );
-  // renderepisodes = episodes.Response === "True" ? (
-  //   <Swiper {...Slidersetting} className='swiper-box'>
-  //     {episodes.Search.map((episode, index) => (
-  //       <SwiperSlide className='swiperslide'key={index}>
-  //         <MovieCard data={episode} />
-  //       </SwiperSlide>
-  //     ))}
-  //   </Swiper>
-  // ) : (
-  //   <div className='movie-error'><h3>{shows.Error}</h3></div>
-  // );
+  
 
   return (
     <div className='movie-wapper'>

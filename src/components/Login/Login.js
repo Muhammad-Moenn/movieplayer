@@ -56,7 +56,7 @@ function Login() {
       if (user.email === email && user.password === password) {
         Navigate('/');       
       }else{
-        console.log("user not fount")
+        toast.error("user not fount")
       }
     });
   }
